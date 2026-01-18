@@ -4,7 +4,10 @@
   need_reply: false
   auto_retry_time: 
   folder: 
-  answer: kd
+
+  <<ANSWER
+
+  ANSWER
 
   <<KEYBOARD
 
@@ -32,11 +35,8 @@ msg_details[msg_count+1].name = user.first_name
 msg_details[msg_count+1].last_name = user.last_name
 msg_details[msg_count+1].message_id = request.message_id
 
-var buttons = [
-[
-  { title: "в меню", command: "/maine" }]
-]
-Bot.sendInlineKeyboard(buttons, "🔄 Проверяем вашу оплату. Это может занять до 30 минут.")
+
+Bot.sendMessage("🔄 Проверяем вашу оплату. Это может занять до 30 минут.")
 
 var text = "оплата\n\nВсего: " + [msg_count-msg_seen+1]
 
