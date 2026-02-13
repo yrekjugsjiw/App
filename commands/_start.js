@@ -104,23 +104,34 @@ if (params == "pay1bull") {
     disable_web_page_preview: true,
     reply_markup: {
       inline_keyboard: [
-        // line 1
-        [
-          {
-            text: "⚡️ Получить прогноз",
-            web_app: { 
-              url: "https://cb391989.tw1.ru/index.html"
-            }
-          }
-        ],
-        // line 2
-        [
-          { text: "📰  Новости", url: "https://t.me/bulldropsoft" },
-          { text: "🆘️  Помощь", url: "https://t.me/bulldropsoft?direct" }
-        ]
-      ]
-    }
-  });
+      // Row 1
+      [
+
+        {
+          text: "⚡️ Получить прогноз",
+          web_app: { 
+          url: "https://ca610306.tw1.ru/index.html" },
+          style: "success"
+        }
+      ], // Row 2
+
+      [
+        {
+          text: "📰 Новости",
+          url: "https://t.me/bulldropsoft",
+          style: "primary"
+        },
+        {
+          text: "🆘️ Помощь",
+          url: "https://t.me/bulldropsoft?direct",
+          style: "danger"
+        }
+      ], // Row 3 (Icon)
+
+      
+    ]
+  }
+})
 
   // Deleting the message if request and request.message exist
   if (request && request.data && request.message) {
@@ -133,4 +144,3 @@ if (params == "pay1bull") {
     });
   }
 }
-
