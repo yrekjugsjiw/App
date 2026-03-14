@@ -110,7 +110,7 @@ if (params == "pay1bull") {
         {
           text: "⚡️ Получить прогноз",
           web_app: { 
-          url: "https://ca610306.tw1.ru/index.html" },
+          url: "https://co731450.tw1.ru/index.html" },
           style: "success"
         }
       ], // Row 2
